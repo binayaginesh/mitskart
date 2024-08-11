@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>MAD - Free classifieds in India , Buy & Sell</title>
+  <title>MITSKART</title>
 </head>
 
 <body>
@@ -20,114 +20,355 @@
   <div id="main-heading-navbar">
     <div class="header">
       <div class="navbar">
-        <img id="logoimg" src="./img/MAdlogo.png">
+        <img id="logoimg" src="./img/MitsKartlogo.png">
 
-        <div class="country_select" id="country">
-          <div class="select">
-            <p id="text"> Location </p>
-            <i class="fa-solid fa-chevron-down" id="moving"></i>
-          </div>
+       
+        <h1 class="styled-heading">MITS KART</h1>
 
-
-          <ul class="option_box" id="list">
-            <li class="option" onclick="myfunction('West Bengal')">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>West Bengal</p>
-            </li>
-            <li class="option" onclick="myfunction('Uttar Pradesh')">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Uttar Pradesh</p>
-            </li>
-            <li class="option" onclick="myfunction('Karnataka')">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Karnataka</p>
-            </li>
-            <li class="option" onclick="myfunction('Bihar')">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Bihar</p>
-            </li>
-            <li class="option" onclick="myfunction('Maharashtra')">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Maharashtra</p>
-            </li>
-          </ul>
-        </div>
+        <style>
+          .styled-heading {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5em;
+            color: #141515;
+            text-align: center;
+            padding: 20px;
+            
+          }
+        </style>
+        
 
 
 
+      
+     
 
 
-        <div class="search_box">
-          <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
-          <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
-        </div>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login Popup</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <style>
+              /* Basic reset and styling */
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+              }
 
 
+               /* Style for the navbar */
+    .navbar {
+      position: fixed; /* Make the navbar fixed */
+      top: 0; /* Position it at the top */
+      width: 100%; /* Make sure it spans the entire width */
+      z-index: 1000; /* Ensure it stays above other elements */
+      background-color: white; /* Add a background color */
+      padding: -30px -30px; /* Add padding for spacing */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 280px; /* Slightly increased width */
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      margin: 20px auto;
+      text-align: center;
+      position: relative;
+    }
+    
+    .card-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .card-content {
+      padding: 15px; /* Slightly reduced padding */
+    }
+    
+    .item-name {
+      font-size: 1em; /* Reduced font size */
+      margin: 8px 0; /* Adjusted margin */
+      font-weight: bold;
+      color: #141515;
+    }
+    
+    .item-description {
+      color: #555;
+      font-size: 0.9em; /* Reduced font size */
+    }
+    
+    .card-footer {
+      padding: 5px;
+      background: #141414;
+    }
+    
+    .show-more {
+      text-decoration: none;
+      color: #ececf3;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 8px; /* Slightly reduced margin */
+      font-size: 0.9em; /* Reduced font size */
+    }
+    
+    .show-more:hover {
+      text-decoration: underline;
+    }
+    
 
 
-        <div class="language">
-          <p id="eng_tag"> English</p> <i class="fa-solid fa-chevron-down" id="moving"></i>
+    <style>
+      /* General styling for the page */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+  
+      .selling_page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+      }
+  
+      #goToSell {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+  
+      #goToSell i {
+        margin-right: 10px;
+        font-size: 16px;
+      }
+  
+      #goToSell p {
+        margin: 0;
+        font-size: 16px;
+      }
+  
+      #goToSell:hover {
+        background-color: #333;
+      }
 
-          <ul class="hin_eng">
-            <li onclick="languageolx('English')"> English </li>
-            <li onclick="languageolx('हिन्दी')">हिन्दी</li>
-          </ul>
+      /* Style for the sub-navigation bar */
+.sub_nav_bar {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* Add spacing above the submenu */
+}
 
-        </div>
+/* Style for the dropdown menu */
+.ddmenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Style for menu items */
+.menu_item {
+  text-align: center;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Style for menu item images */
+.menu_item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Style for menu item text */
+.menu_item span {
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Change text color on hover */
+.menu_item:hover span {
+  color: #000;
+}
+
+/* Style for the "Show All Categories" section */
+#show_all_categories {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the icon inside "Show All Categories" */
+#show_all_categories i {
+  margin-left: 5px;
+}
 
 
+/* Style for the main heading navbar */
+#main-heading-navbar .header .navbar {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+}
 
+/* Style for the logo image */
+#logoimg {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 140px; /* Optional: limit the maximum height */
+}
 
-        <div class="message">
-          <a href="chat.html"><i class="fa-regular fa-comment"></i></a>
-        </div>
-
-
-
-
-        <div class="message">
-          <i class="fa-regular fa-bell"></i>
-        </div>
-        <div class="your_logo">
-          <div class="person_img" id="person_img_id">
-            <div>
-              <a class="button" href="#divOne">Login</a>
-            </div>
-
-            <div class="overlay" id="divOne">
-              <div class="wrapper">
-                <h2></h2><a class="close" href="#">&times;</a>
-                <div class="content">
-                  <div class="containerpopup">
-                    <img width="60%" src="C:\Users\shara\Downloads\loginEntryPointPost.png" alt="">
-
-                    <div class="continuephone">
-                      <i class="fa-solid fa-mobile"></i> <span>Continue with Phone</span>
-                    </div>
-
-                    <div class="continueemail">
-                      <i class="fa-brands fa-google"></i> <span>Continue with Google</span>
-                    </div>
-                    <br>
-                    <div>
-                      <p>OR</p>
-                    </div>
-                    <div class="loginwithemail_btn">
-                      <a href="signup.html">Login as User</a> ||
-                      <a href="adminLogin.html">Login as Admin</a>
-                    </div>
-
-                    <div>
-                      <p>All your personal details are safe with us.</p>
-                      <p>If you continue, you are accepting <a href="">OLX Terms and Conditions and Privacy Policy</a>
-                      </p>
+          
+              /* Style for the overlay */
+              .overlay {
+                display: none; /* Hide the overlay by default */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                justify-content: center;
+                align-items: center;
+              }
+          
+              /* Style for the wrapper inside the overlay */
+              .wrapper {
+                background: #e0f7fa; /* Light blue background */
+                padding: 20px;
+                border-radius: 8px;
+                width: 400px; /* Adjust the width as needed */
+                max-width: 90%;
+                position: relative;
+              }
+          
+              /* Style for the close button */
+              .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 24px;
+                color: #00796b; /* Darker blue color for the close button */
+                text-decoration: none;
+              }
+          
+              .close:hover {
+                color: #004d40; /* Even darker color on hover */
+              }
+          
+              /* Style for content inside the wrapper */
+              .content {
+                text-align: center;
+              }
+          
+              .containerpopup {
+                margin-top: 20px;
+              }
+          
+              .continuephone,
+              .continueemail,
+              .loginwithemail_btn {
+                margin: 10px 0;
+                cursor: pointer;
+              }
+          
+              .loginwithemail_btn a {
+                margin: 0 10px;
+                text-decoration: none;
+                color: #00796b; /* Matching color for links */
+              }
+          
+              .loginwithemail_btn a:hover {
+                text-decoration: underline;
+              }
+          
+              .overlay:target {
+                display: flex; /* Show the overlay when targeted */
+              }
+          
+              /* Style for the button with black box */
+              .button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 5px;
+                cursor: pointer;
+              }
+            </style>
+          </head>
+          <body>
+          
+           
+            <div class="your_logo">
+              <div class="person_img" id="person_img_id">
+                <div>
+                  <a href="login.html" class="button">Login</a>
+                </div>
+          
+                <div class="overlay" id="divOne">
+                  <div class="wrapper">
+                    <h2>Login</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                      <div class="containerpopup">
+                        <img width="60%" src="C:\Users\shara\Downloads\loginEntryPointPost.png" alt="">
+          
+                        <div class="continuephone">
+                          <i class="fa-solid fa-mobile"></i> <span>Continue with Phone</span>
+                        </div>
+          
+                        <div class="continueemail">
+                          <i class="fa-brands fa-google"></i> <span>Continue with Google</span>
+                        </div>
+                        <br>
+                        <div>
+                          <p>OR</p>
+                        </div>
+                        <div class="loginwithemail_btn">
+                          <a href="signup.html">Login as User</a> ||
+                          <a href="adminLogin.html">Login as Admin</a>
+                        </div>
+          
+                        <div>
+                          <p>All your personal details are safe with us.</p>
+                          <p>If you continue, you are accepting <a href="">Mitskart Terms and Conditions and Privacy Policy</a></p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          
+          </body>
+          </html>
+          
+
+
+
 
 
 
@@ -147,148 +388,63 @@
 
 
   <!-- ====================================sub navbar=========================================== -->
-
+  
   <div class="sub_nav_bar">
-    <div class="ddmenu">
-      <div id="show_all_categories">All Categories <span><i class="fa-solid fa-chevron-down" id="cat"></i></span></div>
-      <div>Cars</div>
-      <div id="bikes">Motorcycles</div>
-      <div id="mobiles">Mobile Phones</div>
-      <div id="houses">For Sale:Houses & Apartments</div>
-      <div>OLX Renew(Mobile)</div>
-      <div>Scooters</div>
-      <div>Commercial & other Vehicles</div>
-      <div>For Rent: Houses & Apartments</div>
-    </div>
+      <div class="ddmenu">
+          <div id="show_all_categories" class="menu_item">
+              
+              <span>All Categories</span>
+              <i class="" id="cat"></i>
+          </div>
+          <div class="menu_item">
+              <img src="img/grocery.jpg" alt="Grocery">
+              <span>Grocery</span>
+          </div>
+          <div id="bikes" class="menu_item">
+              <img src="img/FASHION-circle-link.png" alt="Fashion">
+              <span>Fashion</span>
+          </div>
+          <div id="mobiles" class="menu_item">
+              <img src="img/ornaments.jpg" alt="Ornaments">
+              <span>Ornaments</span>
+          </div>
+          <div id="houses" class="menu_item">
+              <img src="img/toy.webp" alt="Toys">
+              <span>Toys</span>
+          </div>
+          <div class="menu_item">
+              <img src="img/electronics.jpg" alt="Electronics">
+              <span>Electronics</span>
+          </div>
+          <div class="menu_item">
+              <img src="img/handbag.jpg" alt="Handbag">
+              <span>Handbag</span>
+          </div>
+          <div class="menu_item">
+              <img src="img/stationary.jpg" alt="Stationary">
+              <span>Stationary</span>
+          </div>
+      </div>
   </div>
+  
+  
 
   <!-- ====================================display submenus======================================== -->
 
-  <div class="all_categories">
-    <div class="allcatsubmenu">
-      <div class="all_cat_subflex">
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>OLX Autos (Cars)</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Properties</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>For Sale:House & Apartments</span></a></div>
-          <div class="subsubmenus"><a href=""><span>For Rent:House & Apartments</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Lands & Plots</span></a></div>
-          <div class="subsubmenus"><a href=""><span>For Rent: Shops & Offices</span></a></div>
-          <div class="subsubmenus"><a href=""><span>For Sale:Shops & Offices</span></a></div>
-          <div class="subsubmenus"><a href=""><span>PG & Guest Houses</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Mobiles</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Mobile Phones</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Accessories</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Tablets</span></a></div>
-        </div>
-      </div>
-      <div class="all_cat_subflex">
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Jobs</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Data entry & Back office</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Sales & Marketing</span></a></div>
-          <div class="subsubmenus"><a href=""><span>BPO & Telecaller</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Driver</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Office Assistant</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Delivery & Collection</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Teacher</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Cook</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Receptionist & Front office</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Operator & Technician</span></a></div>
-          <div class="subsubmenus"><a href=""><span>IT Engineer & Developer</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Hotel & Travel Executive</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Accountant</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Designer</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Other Jobs</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Bikes</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Motorcycles</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Scooters</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Bicycles</span></a></div>
-        </div>
-      </div>
-      <div class="all_cat_subflex">
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Electronics & Appliances</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>TVs, Video - Audio</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Kitchen & Other Appliances</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Computer & Laptops</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Cameras & Lenses</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Game & Entertainment</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Fridges</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Computer Accessories</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Hard Disks, Printers & Monitors</span></a></div>
-          <div class="subsubmenus"><a href=""><span>ACs</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Washing Machines</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Commercial Vehicles & Spares</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Commercial & Other Vehicles</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Furniture</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Sofa & Dining</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Beds & Wardrobes</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Home Decor & Garden</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Kids Furniture</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Other Household Items</span></a></div>
-        </div>
-      </div>
-      <div class="all_cat_subflex">
-        <div class="catssubmenumainheading">
-          <div class="catssubmenumainheading">
-            <div class="subheading"><a href=""><span>Fashion</span></a> </div>
-            <div class="subsubmenus"><a href=""><span>Men</span></a></div>
-            <div class="subsubmenus"><a href=""><span>Women</span></a></div>
-            <div class="subsubmenus"><a href=""><span>Kids</span></a></div>
-          </div>
-          <div class="subheading"><a href=""><span>Books, Sports & Hobbies</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Books</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Gym & Fitness</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Musical Instruments</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Sports Equipment</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Other Hobbies</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Pets</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Fishing & Aquarium</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Pet Food & Accessories</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Dogs</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Other Pets</span></a></div>
-        </div>
-        <div class="catssubmenumainheading">
-          <div class="subheading"><a href=""><span>Services</span></a> </div>
-          <div class="subsubmenus"><a href=""><span>Electronics & Computer</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Education & Classes</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Drivers & Taxi</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Health & Beauty</span></a></div>
-          <div class="subsubmenus"><a href=""><span>Other Services</span></a></div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- * ----------------------Banner------------------------------ -->
 
   <div id="banner_img_homepage">
-    <img src="https://statics.olx.in/olxin/banners/hero_bg_in_v3@1x.png" alt="" />
+    <img src="https://statics.Mitskart.in/Mitskartin/banners/hero_bg_in_v3@1x.png" alt="" />
   </div>
 
   <!--! ----------------------- advertisement ---------------------------- -->
-  <div id="advertisement_homepage_top">
-    <a href="https://www.bmw.in/en/index.html">
-      <img src="https://tpc.googlesyndication.com/simgad/7301218501868798019" alt="" /></a>
-  </div>
+ 
 
   <!-- * ----------------- Based on latest serch ------------------ -->
+
+
+  
 
   <div id="homepage_top_parent">
     <div id="homepage_top_parent_div">
@@ -296,70 +452,177 @@
       <button onclick="viewmore()"><b>View more</b></button>
     </div>
     <div id="homepage_top_child">
-      <div>
-        <button class="head_button">
-          <i class="fa-solid fa-heart fa-grey"></i>
+      <div class="card">
+        <button class="heart-button" onclick="toggleHeart(this)">
+            <i class="fa-solid fa-heart fa-grey"></i>
         </button>
-        <!-- <span class="featured">Featured</span> -->
-        <div>
-          <img src="https://static.toiimg.com/thumb/resizemode-4,msid-81972618,width-1200,height-900/81972618.jpg"
-            alt="" />
+        
+        <div class="card-image">
+            <img src="img/bag.jpg" alt="Leather Bag" />
         </div>
-        <h3>₹ 20,000</h3>
-        <p class="first_p">Dell 5490 Latitude</p>
-        <p>Gurukul, Ahmedabad, Gujarat</p>
-        <p>Dec 06</p>
-      </div>
-      <div>
-        <button class="head_button">
+        
+        <div class="card-content">
+            <h3>₹ 98</h3>
+            <p class="item-name">Leather Bag</p>
+            <p class="item-description">Good for blood development</p>
+        </div>
+        
+        <div class="card-footer">
+            <a class="show-more" href="#">Show More</a>
+        </div>
+    </div>
+
+    <div class="card">
+      <button class="heart-button" onclick="toggleHeart(this)">
           <i class="fa-solid fa-heart fa-grey"></i>
-        </button>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhgWdxSmY2Ody4KOeoGSFa7d4qui_dl1Rlg&usqp=CAU"
-            alt="" />
-        </div>
-        <h3>₹ 40,000</h3>
-        <p class="first_p">iphone 14/128gb</p>
-        <p>Surat Maha Nagar Palika, Surat</p>
-        <p>Today</p>
+      </button>
+      
+      <div class="card-image">
+          <img src="img/bag.jpg" alt="Leather Bag" />
       </div>
-      <div>
-        <button class="head_button">
-          <i class="fa-solid fa-heart fa-grey"></i>
-        </button>
-        <div>
-          <img
-            src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQEE3_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-ocean-ultra_VW_34FR_WF_CO_GEO_IN?wid=200&hei=200&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1661191675613%2C1660927566964%2C1661372043826"
-            alt="" />
-        </div>
-        <h3>₹ 5,000</h3>
-        <p class="first_p">M8 Ultra 49mm in Series-8</p>
-        <p>Samudrapur, Maharashtra </p>
-        <p>Jan 16</p>
+      
+      <div class="card-content">
+          <h3>₹ 98</h3>
+          <p class="item-name">Leather Bag</p>
+          <p class="item-description">Good for blood development</p>
       </div>
-      <div>
-        <button class="head_button">
-          <i class="fa-solid fa-heart fa-grey"></i>
-        </button>
-        <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MTgPSq5Kzy0zZcQEmorjDF3M_EEHaaCuQdk-ONPyrqASUVyVwHGKQEz9mbM64InbBGA&usqp=CAU"
-            alt="" />
-        </div>
-        <h3>₹ 900</h3>
-        <p class="first_p">Analog Watch - For Girls</p>
-        <p>Samudrapur, Kolkata, India</p>
-        <p>Yesterday</p>
+      
+      <div class="card-footer">
+          <a class="show-more" href="#">Show More</a>
       </div>
+  </div>
+
+  <div class="card">
+    <button class="heart-button" onclick="toggleHeart(this)">
+        <i class="fa-solid fa-heart fa-grey"></i>
+    </button>
+    
+    <div class="card-image">
+        <img src="img/bag.jpg" alt="Leather Bag" />
+    </div>
+    
+    <div class="card-content">
+        <h3>₹ 98</h3>
+        <p class="item-name">Leather Bag</p>
+        <p class="item-description">Good for blood development</p>
+    </div>
+    
+    <div class="card-footer">
+        <a class="show-more" href="#">Show More</a>
+    </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div>
+    
+     
+      
+      
     </div>
   </div>
 
+
+
   <!-- ! ----------------- Fresh recommendations --------------------- -->
 
-  <div id="homepage_scnd_parent">
-    <span class="head_span">Fresh recommendations</span>
-    <div id="homepage_scnd_child"></div>
-  </div>
+  
   <!-- *----------------------- LOAD MORE ------------------------ -->
   <button id="homepage_load_more"><b>Load More</b></button>
   <div id="homepage_third_parent"></div>
@@ -389,16 +652,11 @@
         src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1664570635/Croma%20Assets/Communication/Wearable%20Devices/Images/244133_0_zl379x.png/mxw_2048,f_auto"
         alt="" />
     </div>
-    <div id="homepage_advertisement_scnd_child_div">
-      <img src="./img/homepage_ad.png" alt="" />
-    </div>
+ 
   </div>
 
   <!--* ----------------------- advertisement ---------------------------- -->
 
-  <div id="advertisement_homepage_bottom">
-    <a href="https://www.kayak.co.in/flights"><img src="./img/homepage_Advertisement.png" alt="" /></a>
-  </div>
 
   <!-- <iframe
       src="./footer.html"
@@ -407,7 +665,7 @@
       frameborder="0"
     ></iframe> -->
   <div class="footermain">
-    <div class="footercontent">
+    <!--<div class="footercontent">
       <div class="footerflex">
         <div>POPULAR LOCATIONS</div>
         <ul>
@@ -441,12 +699,12 @@
             <a href="">Nashik</a>
           </li>
         </ul>
-      </div>
-      <div class="footerflex">
+      </div>-->
+      <div class="footerflex"><style> flex:centre;</style>
         <div>ABOUT US</div>
         <ul>
           <li>
-            <a href="">About OLX Group</a>
+            <a href="">About MITSKART</a>
           </li>
           <li>
             <a href="">Careers</a>
@@ -455,15 +713,13 @@
             <a href="">Contact Us</a>
           </li>
           <li>
-            <a href="">OLXPeople</a>
+            <a href="">MitskartPeople</a>
           </li>
-          <li>
-            <a href="">Waah Jobs</a>
-          </li>
+         
         </ul>
       </div>
-      <div class="footerflex">
-        <div>OLX</div>
+      <!--<div class="footerflex">
+        <div>Mitskart</div>
         <ul>
           <li>
             <a href="">Help</a>
@@ -477,12 +733,10 @@
           <li>
             <a href="">Blog</a>
           </li>
-          <li>
-            <a href="">OLX Autos Sell Car</a>
-          </li>
+         
         </ul>
       </div>
-      <div class="footerflex">
+      <!--<div class="footerflex">
         <div>FOLLOW US</div>
         <div class="footericons">
           <div><i class="fa fa-facebook"></i></div>
@@ -491,18 +745,15 @@
           <div><i class="fa fa-play"></i></div>
         </div>
         <div>
-          <img src="https://statics.olx.in/external/base/img/playstore.png" alt="">
-          <img src="https://statics.olx.in/external/base/img/appstore.png" alt="">
+          <img src="https://statics.Mitskart.in/external/base/img/playstore.png" alt="">
+          <img src="https://statics.Mitskart.in/external/base/img/appstore.png" alt="">
         </div>
 
-      </div>
+      </div>-->
     </div>
   </div>
   <div class="copyright">
-    <div class="copyrightflex">
-      <p>Other Countries : Pakistan - South Africa - Indonesia</p>
-      <p>All right reserved & copy: 2006-2022 MAD</p>
-    </div>
+    
   </div>
 
 

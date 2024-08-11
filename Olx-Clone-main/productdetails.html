@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +17,9 @@
     <div id="main-heading-navbar">
         <div class="header">
             <div class="navbar">
-                <img id="logoimg" src="./img/MAdlogo.png">
+                <img id="logoimg" src="./img/MitsKartlogo.png">
     
-                <div class="country_select" id="country">
+                <!--<div class="country_select" id="country">
                     <div class="select">
                         <p id="text"> Select city,area or locality </p>
                         <i class="fa-solid fa-chevron-down" id="moving"></i>
@@ -48,25 +49,25 @@
                         </li>
                     </ul>
                 </div>
-    
+            -->
     
     
     
     
                 <div class="search_box">
-                    <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                    <input type="text" class="searchclass" id="searchid" placeholder="Find Grocery, mobile phone and More....">
                     <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
                 </div>
     
     
     
     
-                <div class="language">
+                <!--<div class="language">
                     <p id="eng_tag"> English</p>  <i class="fa-solid fa-chevron-down" id="moving"></i>
                    
                     <ul class="hin_eng">
-                        <li onclick="languageolx('English')"> English </li>
-                        <li onclick="languageolx('हिन्दी')">हिन्दी</li>
+                        <li onclick="languageMITSKART('English')"> English </li>
+                        <li onclick="languageMITSKART('हिन्दी')">हिन्दी</li>
                     </ul>
     
                 </div>
@@ -86,14 +87,14 @@
                 </div>
     
     
-    
+            -->
     
     
                 <div class="your_logo">
                     <div class="person_img" id="person_img_id">
-                        <div>
+                        <!--<div>
                             <a class="button" href="#divOne">Login</a>
-                        </div>
+                        </div>-->
                         
                         <div class="overlay" id="divOne">
                             <div class="wrapper">
@@ -119,7 +120,7 @@
     
                                         <div>
                                             <p>All your personal details are safe with us.</p>
-                                            <p>If you continue, you are accepting <a href="">OLX Terms and Conditions and Privacy Policy</a></p>
+                                            <p>If you continue, you are accepting <a href="">MITSKART Terms and Conditions and Privacy Policy</a></p>
                                         </div>
                                     </div>
     
@@ -165,7 +166,7 @@
                             <hr>
                             <li>
                                 <i class="fa fa-download" aria-hidden="true"></i>
-                                <p>Install OLX Lite App</p>
+                                <p>Install MITSKART Lite App</p>
                             </li>
                             <li>
                                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -195,27 +196,156 @@
     
     <!-- ====================================sub navbar=========================================== -->
     
-    <div class="sub_nav_bar">
-        <div class="ddmenu">
-            <div id="show_all_categories">All Categories <span><i class="fa-solid fa-chevron-down" id="cat"></i></span></div>
-            <div>Cars</div>
-            <div id="bikes">Motorcycles</div>
-            <div id="mobiles">Mobile Phones</div>
-            <div id="houses">For Sale:Houses & Apartments</div>
-            <div>OLX Renew(Mobile)</div>
-            <div>Scooters</div>
-            <div>Commercial & other Vehicles</div>
-            <div>For Rent: Houses & Apartments</div>
+    <style>
+        .sub_nav_bar {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+      
+        .ddmenu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+      
+        .menu_item {
+            text-align: center;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+      
+        .menu_item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+      
+        .menu_item span {
+            font-size: 16px;
+            color: #333;
+            text-transform: uppercase;
+        }
+      
+        .menu_item:hover span {
+            color: #000;
+        }
+      
+        #show_all_categories {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        #show_all_categories i {
+            margin-left: 5px;
+        }
+      </style>
+      
+      <div class="sub_nav_bar">
+          <div class="ddmenu">
+              <div id="show_all_categories" class="menu_item">
+                  
+                  <span>All Categories</span>
+                  <i class="" id="cat"></i>
+              </div>
+              <div class="menu_item">
+                  <img src="img/grocery.jpg" alt="Grocery">
+                  <span>Grocery</span>
+              </div>
+              <div id="bikes" class="menu_item">
+                  <img src="img/FASHION-circle-link.png" alt="Fashion">
+                  <span>Fashion</span>
+              </div>
+              <div id="mobiles" class="menu_item">
+                  <img src="img/ornaments.jpg" alt="Ornaments">
+                  <span>Ornaments</span>
+              </div>
+              <div id="houses" class="menu_item">
+                  <img src="img/toy.webp" alt="Toys">
+                  <span>Toys</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/electronics.jpg" alt="Electronics">
+                  <span>Electronics</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/handbag.jpg" alt="Handbag">
+                  <span>Handbag</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/stationary.jpg" alt="Stationary">
+                  <span>Stationary</span>
+              </div>
+          </div>
+      </div>
+
+
+<style>
+      /* Initial state of the heart icon */
+.head_button i {
+  font-size: 24px;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+/* Change color to red when the heart icon is tapped or clicked */
+.head_button i.active {
+  color: red;
+}
+</style>
+
+<script>
+    function toggleHeart(element) {
+        const heartIcon = element.querySelector('i');
+        heartIcon.classList.toggle('active');
+      }
+      
+</script>
+
+
+      <div style="display: flex; align-items: flex-start; gap: 20px;">
+        <div style="flex-shrink: 0; margin-left: 300px; text-align: center;">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2020/9/PN/DS/CG/113370877/55205-5-school-bag-free-clipart-hd.png"
+            alt="School Bag"
+            style="width: 25%;" />
+          <button class="head_button" onclick="toggleHeart(this)" style="margin-top: 10px;">
+            <i class="fa-solid fa-heart fa-grey" id="heart-icon"></i>
+          </button>
         </div>
-    </div>
+      
+        <div style="margin-left: -300px;margin-top:40px;">
+          <h3><strong>Price:</strong> ₹ 300</h3>
+      
+          <p class="first_p"><strong>Product Details</strong></p>
+          <p>School Bag</p>
+          <p>Leather bag of good quality</p>
+      
+          <p><strong>Seller Details</strong></p>
+          <p>Name: John Doe</p>
+          <p>Phone: <a href="tel:+911234567890">+91 12345 67890</a></p>
+      
+          <p>
+            <a href="https://wa.me/911234567890" target="_blank">
+              <i class="fa fa-whatsapp" style="font-size:24px;color:green"></i> Chat on WhatsApp
+            </a>
+          </p>
+        </div>
+      </div>
+      
+      
     
     <!-- ====================================display submenus======================================== -->
     
-    <div class="all_categories">
+   <!-- <div class="all_categories">
         <div class="allcatsubmenu">
             <div class="all_cat_subflex">
                 <div class="catssubmenumainheading">
-                    <div class="subheading"><a href=""><span>OLX Autos (Cars)</span></a></div>
+                    <div class="subheading"><a href=""><span>MITSKART Autos (Geocery)</span></a></div>
                 </div>
                 <div class="catssubmenumainheading">
                     <div class="subheading"><a href=""><span>Properties</span></a> </div>
@@ -228,7 +358,7 @@
                 </div>
                 <div class="catssubmenumainheading">
                     <div class="subheading"><a href=""><span>Mobiles</span></a> </div>
-                    <div class="subsubmenus"><a href=""><span>Mobile Phones</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Ornaments</span></a></div>
                     <div class="subsubmenus"><a href=""><span>Accessories</span></a></div>
                     <div class="subsubmenus"><a href=""><span>Tablets</span></a></div>
                 </div>
@@ -254,8 +384,8 @@
                 </div>
                 <div class="catssubmenumainheading">
                     <div class="subheading"><a href=""><span>Bikes</span></a> </div>
-                    <div class="subsubmenus"><a href=""><span>Motorcycles</span></a></div>
-                    <div class="subsubmenus"><a href=""><span>Scooters</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Fashion</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Handbag</span></a></div>
                     <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
                     <div class="subsubmenus"><a href=""><span>Bicycles</span></a></div>
                 </div>
@@ -276,7 +406,7 @@
                 </div>
                 <div class="catssubmenumainheading">
                     <div class="subheading"><a href=""><span>Commercial Vehicles & Spares</span></a> </div>
-                    <div class="subsubmenus"><a href=""><span>Commercial & Other Vehicles</span></a></div>
+                    <div class="subsubmenus"><a href=""><span>Stationary</span></a></div>
                     <div class="subsubmenus"><a href=""><span>Spare Parts</span></a></div>
                 </div>
                 <div class="catssubmenumainheading">
@@ -322,10 +452,10 @@
             </div>
         </div>
     </div>
-
+-->
 
     <div class="productmain" id="productmainappend">
-        <!-- <div class="product_img">
+         <div class="product_img">
             <div class="image_discription">
                 <div class="swiper">
                     <div class="swiper-wrapper">
@@ -393,7 +523,7 @@
     </div>
     <div class="footermain">
         <div class="footercontent">
-            <div class="footerflex">
+           <!-- <div class="footerflex">
                 <div>POPULAR LOCATIONS</div>
                 <ul>
                     <li>
@@ -426,12 +556,12 @@
                         <a href="">Nashik</a>
                     </li>
                 </ul>
-            </div>
+            </div>-->
             <div class="footerflex">
                 <div>ABOUT US</div>
                 <ul>
                     <li>
-                        <a href="">About OLX Group</a>
+                        <a href="">About MITSKART Group</a>
                     </li>
                     <li>
                         <a href="">Careers</a>
@@ -440,7 +570,7 @@
                         <a href="">Contact Us</a>
                     </li>
                     <li>
-                        <a href="">OLXPeople</a>
+                        <a href="">MITSKARTPeople</a>
                     </li>
                     <li>
                         <a href="">Waah Jobs</a>
@@ -448,7 +578,7 @@
                 </ul>
             </div>
             <div class="footerflex">
-                <div>OLX</div>
+                <div>MITSKART</div>
                 <ul>
                     <li>
                         <a href="">Help</a>
@@ -463,11 +593,11 @@
                         <a href="">Blog</a>
                     </li>
                     <li>
-                        <a href="">OLX Autos Sell Car</a>
+                        <a href=""></a>
                     </li>
                 </ul>
             </div>
-            <div class="footerflex">
+            <!--<div class="footerflex">
                 <div>FOLLOW US</div>
                 <div class="footericons">
                     <div><i class="fa fa-facebook"></i></div>
@@ -476,8 +606,8 @@
                     <div><i class="fa fa-play"></i></div>
                 </div>
                 <div>
-                    <img src="https://statics.olx.in/external/base/img/playstore.png" alt="">
-                    <img src="https://statics.olx.in/external/base/img/appstore.png" alt="">
+                    <img src="https://statics.MITSKART.in/external/base/img/playstore.png" alt="">
+                    <img src="https://statics.MITSKART.in/external/base/img/appstore.png" alt="">
                 </div>
                    
             </div>
@@ -485,10 +615,48 @@
     </div>
     <div class="copyright">
         <div class="copyrightflex">
-            <p>Other Countries :  Pakistan - South Africa - Indonesia</p>
-            <p>All right reserved & copy: 2006-2022 MAD</p>
+            <p></p>
+            <p></p>
         </div>
     </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
 <script src="./scripts/navbar.js"></script>
@@ -525,7 +693,7 @@
                         Price: <span style="font-weight:bolder">${element.price}</span> and it's negotiable
                         </p>
                 </div>
-            </div>
+            </div>-->
 
             <div class="product_details">
                 <div class="box">
