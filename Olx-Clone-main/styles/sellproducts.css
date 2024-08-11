@@ -18,7 +18,7 @@
     width: 100%;
 }
 .arrow{
-    color: #002f34;
+    color: #0e0e0e;
     margin: 1.5% 2%;
     font-size: 1.5em;
 }
@@ -27,7 +27,7 @@
     padding: .6em 0;
     text-align: center;
     font-size: 24px;
-    color: #173234;
+    color: #181818;
 }
 /* Main Section*/
 .main{
@@ -40,7 +40,7 @@
     font-size: 20px;
     font-weight: 900;
     padding: 15px 15px;
-    color: #002f34;
+    color: #0a0a0a;
 }
 .breadcrumbs{
     padding: 10px 15px;
@@ -50,17 +50,17 @@
 }
 .breadcrumbs__item:not(:last-of-type)::after{
     content: '/';
-    color: #7f9699;
+    color: #3c3f3f;
     font-size: 12px;
 }
 .breadcrumbs__link{
     text-decoration: none;
-    color: #749397;
+    color: #2f3232;
     font-size: 12px;
 }
 .change{
     padding-left: 10px;
-    color: #002f34;
+    color: #1b1c1d;
     font-size: 15px;
     font-weight: 900;
     text-underline-offset: 4px;
@@ -79,7 +79,7 @@ hr{
 .inner__heading{
     position: relative;
     padding: 0 30px;
-    color: #002f34;
+    color: #2b2e2e;
     margin-bottom: 4%;
 }
 .inner__title{
@@ -93,7 +93,7 @@ hr{
 .inner__button button{
     padding: 8px 10px;
     font-size: 15px;
-    color: #002f34;
+    color: #0e0f0f;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -186,15 +186,15 @@ hr{
    background: rgb(223, 223, 223);
 }
 #post_btn:hover{
-    color: #002f34;
-    background-color: #19afaa;
+    color: #f4fbfc;
+    background-color: #0c0c0c;
     transition: .5s;
 }
 /* Footer part*/
 .footer{
     height: 50px;
     width: 100%;
-    background-color: #002f34;
+    background-color: #0d0d0e;
     margin-top: 2%;
     display: flex;
     justify-content: space-around;

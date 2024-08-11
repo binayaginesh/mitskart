@@ -18,7 +18,7 @@
     width: 100%;
 }
 .arrow{
-    color: #002f34;
+    color: #161717;
     margin: 1.5% 2%;
     font-size: 1.5em;
 }
@@ -39,7 +39,7 @@
 }
 .main h4{
     padding: 20px 30px;
-    color: #002f34;
+    color: #131414;
 }
 nav{
     width: 50%;
@@ -116,7 +116,7 @@ nav ul .first-link:hover ul{
 .footer{
     height: 50px;
     width: 100%;
-    background-color: #002f34;
+    background-color: #131313;
     margin-top: 2%;
     display: flex;
     justify-content: space-around;
