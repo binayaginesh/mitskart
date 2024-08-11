@@ -69,7 +69,7 @@
   width: 9px;
   height: 9px;
   border-radius: 5px;
-  background: gray;
+  background: rgb(250, 247, 247);
   display: inline-block !important;
   margin: 0 1px;
   cursor: pointer;
@@ -188,7 +188,7 @@ input {
   height: 30px;
   width: 400px;
   line-height: 10px;
-  border-color: teal;
+  border-color: rgb(20, 20, 20);
   border-top: none;
   border-left: none;
   border-right: none;
@@ -213,18 +213,18 @@ input {
   font-size: 20px;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  background-color: rgb(100, 173, 173);
+  background-color: rgb(32, 33, 33);
   border-radius: 5px;
   color: white;
 }
 
 #signup:hover{
-  background: teal;
+  background: rgb(0, 0, 0);
   color: white;
 }
 #confirm:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgb(177, 171, 171);
+  background-color: rgb(0, 0, 0);
 }
 
 /* #signup h1 {
@@ -235,7 +235,7 @@ input {
 
 p {
   font-size: 12px;
-  color: teal;
+  color: rgb(16, 16, 16);
 }
 
 h3 {
@@ -245,7 +245,7 @@ h3 {
 }
 
 a {
-  color: teal;
+  color: rgb(21, 21, 21);
   margin-left: 270px;
 }
 
