@@ -40,6 +40,18 @@ app.get('*', (req, res) => {
   });
 });
 
+// Route to get grocery data
+app.get('/api/groceries', (req, res) => {
+    const filePath = path.join(__dirname, 'database', 'grocery.json');
+    fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+            return res.status(500).json({ message: 'Error reading file' });
+        }
+        res.json(JSON.parse(data || '[]'));
+    });
+});
+
+
 // POST route to receive form data and handle file uploads
 app.post('/save-data', upload.single('photo'), (req, res) => {
     const newData = {

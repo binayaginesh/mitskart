@@ -22,5 +22,21 @@
     "photo": "Screenshot (1).png",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
+  },
+  {
+    "itemName": "jam",
+    "description": "nice",
+    "price": "200",
+    "photo": null,
+    "name": "Binaya Ginesh",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "itemName": "jam",
+    "description": "nice",
+    "price": "20",
+    "photo": null,
+    "name": "webduo",
+    "phoneNumber": "9048524615"
   }
 ]
