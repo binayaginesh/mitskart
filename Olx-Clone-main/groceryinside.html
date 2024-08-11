@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product page </title>
+    <link rel="stylesheet" href="./styles/productdetails.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <div id="main-heading-navbar">
+        <div class="header">
+            <div class="navbar">
+                <img id="logoimg" src="./img/MitsKartlogo.png">
+    
+               
+    
+    
+    
+    
+    
+                <div class="your_logo">
+                    <div class="person_img" id="person_img_id">
+                        <!--<div>
+                            <a class="button" href="#divOne">Login</a>
+                        </div>-->
+                        
+                        <div class="overlay" id="divOne">
+                            <div class="wrapper">
+                                <h2></h2><a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <div class="containerpopup">
+                                        <img width="60%" src="C:\Users\shara\Downloads\loginEntryPointPost.png" alt="">
+                                       
+                                        <div class="continuephone">
+                                            <i class="fa fa-mobile" aria-hidden="true"></i> <span>Continue with Phone</span>
+                                        </div>
+                                     
+                                        <div class="continueemail">
+                                            <i class="fa fa-google" aria-hidden="true"></i> <span>Continue with Google</span>
+                                        </div>
+    
+                                        <div>
+                                            <p>OR</p>
+                                        </div>
+                                        <div class="loginwithemail_btn">
+                                            <a href="">Login with Email</a>
+                                        </div>
+    
+                                        <div>
+                                            <p>All your personal details are safe with us.</p>
+                                            <p>If you continue, you are accepting <a href="">MITSKART Terms and Conditions and Privacy Policy</a></p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <img src="C:\Users\shara\Downloads\1024px-Eo_circle_pink_white_letter-s.png"> -->
+                        
+                    </div>
+    
+                   
+                </div>
+    
+    
+    
+    
+    
+                <div class="selling_page">
+                    <button id="goToSell"> <i class="fa-solid fa-plus"></i>
+                        <p> SELL</p>
+                    </button>
+                </div>
+    
+    
+            </div>
+        </div>
+    
+    </div>
+        
+    
+    <!-- ====================================sub navbar=========================================== -->
+    
+    <style>
+        .sub_nav_bar {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+      
+        .ddmenu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+      
+        .menu_item {
+            text-align: center;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+      
+        .menu_item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+      
+        .menu_item span {
+            font-size: 16px;
+            color: #333;
+            text-transform: uppercase;
+        }
+      
+        .menu_item:hover span {
+            color: #000;
+        }
+      
+        #show_all_categories {
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+      
+        #show_all_categories i {
+            margin-left: 5px;
+        }
+      </style>
+      
+      <div class="sub_nav_bar">
+          <div class="ddmenu">
+              <div id="show_all_categories" class="menu_item">
+                  
+                  <span>All Categories</span>
+                  <i class="" id="cat"></i>
+              </div>
+              <div class="menu_item">
+                  <img src="img/grocery.jpg" alt="Grocery">
+                  <span>Grocery</span>
+              </div>
+              <div id="bikes" class="menu_item">
+                  <img src="img/FASHION-circle-link.png" alt="Fashion">
+                  <span>Fashion</span>
+              </div>
+              <div id="mobiles" class="menu_item">
+                  <img src="img/ornaments.jpg" alt="Ornaments">
+                  <span>Ornaments</span>
+              </div>
+              <div id="houses" class="menu_item">
+                  <img src="img/toy.webp" alt="Toys">
+                  <span>Toys</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/electronics.jpg" alt="Electronics">
+                  <span>Electronics</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/handbag.jpg" alt="Handbag">
+                  <span>Handbag</span>
+              </div>
+              <div class="menu_item">
+                  <img src="img/stationary.jpg" alt="Stationary">
+                  <span>Stationary</span>
+              </div>
+          </div>
+      </div>
+
+
+<style>
+      /* Initial state of the heart icon */
+.head_button i {
+  font-size: 24px;
+  color: grey;
+  transition: color 0.3s ease;
+}
+
+/* Change color to red when the heart icon is tapped or clicked */
+.head_button i.active {
+  color: red;
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 280px; /* Slightly increased width */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 15px; /* Slightly reduced padding */
+  }
+  
+  .item-name {
+    font-size: 1em; /* Reduced font size */
+    margin: 8px 0; /* Adjusted margin */
+    font-weight: bold;
+    color: #141515;
+  }
+  
+  .item-description {
+    color: #555;
+    font-size: 0.9em; /* Reduced font size */
+  }
+  
+  .card-footer {
+    padding: 5px;
+    background: #141414;
+  }
+  
+  .show-more {
+    text-decoration: none;
+    color: #ececf3;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px; /* Slightly reduced margin */
+    font-size: 0.9em; /* Reduced font size */
+  }
+  
+  .show-more:hover {
+    text-decoration: underline;
+  }
+
+  .head_span {
+    font-size: 24px;
+  }
+
+  #homepage_top_parent_div button {
+    color: rgb(26, 26, 26);
+    border: 0px;
+    font-size: 14px;
+    background-color: #ebeeef;
+  }
+  #homepage_top_parent_div button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(26, 26, 26);
+  }
+  #homepage_top_parent_div {
+    display: flex;
+    justify-content: space-between;
+  }
+  #homepage_top_child p {
+    color: grey;
+    text-align: left;
+  }
+  #homepage_top_child h3 {
+    text-align: left;
+  }
+  #homepage_top_child .first_p {
+    color: #333;
+    text-align: left;
+  }
+  #homepage_top_child p:last-child {
+    font-size: 12px;
+    text-align: right;
+  }
+  #homepage_top_child button {
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    border: 0;
+  }
+  #homepage_top_child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    cursor: pointer;
+    align-items: center;
+    margin: auto;
+    height: auto;
+  }
+  #homepage_top_child img {
+    margin-top: -25px;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+  }
+  #homepage_top_child > div {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 10px 20px;
+  }
+  #homepage_top_child > div button {
+    margin-left: 88%;
+  }
+
+  #homepage_top_parent{
+    width: 80%;
+    margin: auto;
+    background-color: #ebeeef;
+    padding: 15px 25px;
+  }
+
+
+</style>
+
+<script>
+    function toggleHeart(element) {
+        const heartIcon = element.querySelector('i');
+        heartIcon.classList.toggle('active');
+      }
+      
+</script>
+
+
+<div id="homepage_top_parent">
+    <div id="homepage_top_parent_div">
+      <span class="head_span"></span>
+      <button onclick="viewmore()"><b></b></button>
+    </div>
+    <div id="homepage_top_child">
+      <div class="card">
+        <button class="heart-button" onclick="toggleHeart(this)">
+            <i class="fa-solid fa-heart fa-grey"></i>
+        </button>
+        
+        <div class="card-image">
+            <img src="img/bag.jpg" alt="Leather Bag" />
+        </div>
+        
+        <div class="card-content">
+            <h3>₹ 98</h3>
+            <p class="item-name">Leather Bag</p>
+            <p class="item-description">Good for blood development</p>
+        </div>
+        
+        <div class="card-footer">
+            <a class="show-more" href="productdetails.html">Show More</a>
+        </div>
+    </div>
+
+    <div class="card">
+      <button class="heart-button" onclick="toggleHeart(this)">
+          <i class="fa-solid fa-heart fa-grey"></i>
+      </button>
+      
+      <div class="card-image">
+          <img src="img/bag.jpg" alt="Leather Bag" />
+      </div>
+      
+      <div class="card-content">
+          <h3>₹ 98</h3>
+          <p class="item-name">Leather Bag</p>
+          <p class="item-description">Good for blood development</p>
+      </div>
+      
+      <div class="card-footer">
+          <a class="show-more" href="#">Show More</a>
+      </div>
+  </div>
+
+  <div class="card">
+    <button class="heart-button" onclick="toggleHeart(this)">
+        <i class="fa-solid fa-heart fa-grey"></i>
+    </button>
+    
+    <div class="card-image">
+        <img src="img/bag.jpg" alt="Leather Bag" />
+    </div>
+    
+    <div class="card-content">
+        <h3>₹ 98</h3>
+        <p class="item-name">Leather Bag</p>
+        <p class="item-description">Good for blood development</p>
+    </div>
+    
+    <div class="card-footer">
+        <a class="show-more" href="#">Show More</a>
+    </div>
+</div>
+
+<div class="card">
+  <button class="heart-button" onclick="toggleHeart(this)">
+      <i class="fa-solid fa-heart fa-grey"></i>
+  </button>
+  
+  <div class="card-image">
+      <img src="img/bag.jpg" alt="Leather Bag" />
+  </div>
+  
+  <div class="card-content">
+      <h3>₹ 98</h3>
+      <p class="item-name">Leather Bag</p>
+      <p class="item-description">Good for blood development</p>
+  </div>
+  
+  <div class="card-footer">
+      <a class="show-more" href="#">Show More</a>
+  </div>
+</div> 
+       </div>
+  </div>
+
+<style>
+  #homepage_load_more {
+    margin-left: 47%;
+    width: 140px;
+    font-size: 18px;
+    height: 45px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+</style>  
+
+
+  <button id="homepage_load_more"><b>Load More</b></button>
+  <div id="homepage_third_parent"></div>
+      
+  
+    <div class="footermain">
+        <div class="footercontent">
+           
+            <div class="footerflex">
+                <div>ABOUT US</div>
+                <ul>
+                    <li>
+                        <a href="">About MITSKART Group</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="">MITSKARTPeople</a>
+                    </li>
+                    <li>
+                        <a href="">Waah Jobs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerflex">
+                <div>MITSKART</div>
+                <ul>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                    <li>
+                        <a href="">Sitemap</a>
+                    </li>
+                    <li>
+                        <a href="">Legal & Privacy Information</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </div>
+            
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
+<script src="./scripts/navbar.js"></script>
+<script>
+    let lsdata = JSON.parse(localStorage.getItem("local_Key"))
+    // console.log(lsdata)
+    let mainContainer = document.getElementById("productmainappend")
+    mainContainer.innerHTML = ""
+
+    let product = lsdata.map((element)=>{
+        console.log(element)
+        return `
+    <div class="product_img">
+            <div class="image_discription">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src=${element.image_src}> </div>
+                        <div class="swiper-slide"> <img src=${element.image_src}></div>
+                        <div class="swiper-slide"> <img src=${element.image_src}></div>
+                        <div class="swiper-slide"> <img src=${element.image_src}></div>
+    
+                    </div>
+    
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev" id="prev"></div>
+                    <div class="swiper-button-next" id="next"></div>
+                </div>
+    
+                <div class="itemdescription">
+                    <h3> Description </h3>
+                    <p>Brand: ${element.brand} <br>
+                        ${element.description} <br>
+                        ${element.title} <br>
+                        Price: <span style="font-weight:bolder">${element.price}</span> and it's negotiable
+                        </p>
+                </div>
+            </div>-->
+
+            <div class="product_details">
+                <div class="box">
+                    <div class="price">
+                        <h3> ₹ ${element.price}</h3>
+                        <div>
+                            <p><i class="fa-solid fa-share-nodes"></i> </p>
+                            <p> <i class="fa-regular fa-heart"></i> </p>
+                        </div>
+                    </div>
+                    <p>${element.traveled}</p>
+                    <p> ${element.title} </p>
+                    <div class="location">
+                        <p>${element.location}</p>
+                        <p>${element.date}</p>
+                    </div>
+                </div>
+    
+                <div class="box" id="box2">
+                    <p class="Seller_description"> Seller Description </p>
+                    <div class="seller_detail">
+                        <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659651__340.png">
+                        <div>
+                            <h2> Dr Naik </h2>
+                            <p>Member since Nov 2021</p>
+                        </div>
+                    </div>
+                    <a href="./chat.html"> Chat with Seller  </a>
+    
+                </div>
+    
+             <div class="box" id="box3">
+                  <h2> Posted in </h2>
+                  <p>${element.location}</p>
+                  <img src="https://wp.inews.co.uk/wp-content/uploads/2019/06/google-maps.jpg" >
+             </div>
+    
+    
+    
+            </div>
+        </div> 
+    `
+   
+
+    })
+    mainContainer.innerHTML = product
+</script>
+   
+
+
