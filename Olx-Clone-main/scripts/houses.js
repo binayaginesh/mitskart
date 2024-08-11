@@ -1,4 +1,4 @@
-getProducts();
+/*getProducts();
 let data;
 async function getProducts(){
     let product_name = "electronics";

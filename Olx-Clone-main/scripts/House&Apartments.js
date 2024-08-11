@@ -1,4 +1,4 @@
-let ApartmetsURL = "https://636a74ebb10125b78fdbef78.mockapi.io/electronics";
+/*let ApartmetsURL = "https://636a74ebb10125b78fdbef78.mockapi.io/electronics";
 
 let postBtn = document.getElementById("post_btn")
 
