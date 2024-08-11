@@ -25,7 +25,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve images from 'img' directory
 app.use('/img', express.static(path.join(__dirname, 'Olx-Clone-main', 'img')));
 
 // Serve uploaded files
