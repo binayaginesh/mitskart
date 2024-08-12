@@ -1,350 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Product page </title>
-    <link rel="stylesheet" href="./styles/productdetails.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="/Olx-Clone-main/public/styles/index.css"> <!-- Add your CSS file here -->
 </head>
 <body>
-    <div id="main-heading-navbar">
-        <div class="header">
-            <div class="navbar">
-                <img id="logoimg" src="./img/MitsKartlogo.png">
-
-
-    
-    
-    
-    
-    
-                <div class="selling_page">
-                    <button id="goToSell"> <i class="fa-solid fa-plus"></i>
-                        <p> SELL</p>
-                    </button>
-                </div>
-    
-    
-            </div>
-        </div>
-    
-    </div>
-        
-    
-    <!-- ====================================sub navbar=========================================== -->
-    
-    <style>
-        .sub_nav_bar {
-            background-color: #f8f8f8;
-            padding: 20px 0;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-      
-        .ddmenu {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-      
-        .menu_item {
-            text-align: center;
-            margin: 0 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-      
-        .menu_item img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-bottom: 8px;
-        }
-      
-        .menu_item span {
-            font-size: 16px;
-            color: #333;
-            text-transform: uppercase;
-        }
-      
-        .menu_item:hover span {
-            color: #000;
-        }
-      
-        #show_all_categories {
-            font-weight: bold;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-      
-        #show_all_categories i {
-            margin-left: 5px;
-        }
-      </style>
-      
-      <div class="sub_nav_bar">
-          <div class="ddmenu">
-              <div id="show_all_categories" class="menu_item">
-                  
-                  <span>All Categories</span>
-                  <i class="" id="cat"></i>
-              </div>
-              <div class="menu_item">
-                  <img src="img/grocery.jpg" alt="Grocery">
-                  <span>Grocery</span>
-              </div>
-              <div id="bikes" class="menu_item">
-                  <img src="img/FASHION-circle-link.png" alt="Fashion">
-                  <span>Fashion</span>
-              </div>
-              <div id="mobiles" class="menu_item">
-                  <img src="img/ornaments.jpg" alt="Ornaments">
-                  <span>Ornaments</span>
-              </div>
-              <div id="houses" class="menu_item">
-                  <img src="img/toy.webp" alt="Toys">
-                  <span>Toys</span>
-              </div>
-              <div class="menu_item">
-                  <img src="img/electronics.jpg" alt="Electronics">
-                  <span>Electronics</span>
-              </div>
-              <div class="menu_item">
-                  <img src="img/handbag.jpg" alt="Handbag">
-                  <span>Handbag</span>
-              </div>
-              <div class="menu_item">
-                  <img src="img/stationary.jpg" alt="Stationary">
-                  <span>Stationary</span>
-              </div>
-          </div>
-      </div>
-
-
-<style>
-      /* Initial state of the heart icon */
-.head_button i {
-  font-size: 24px;
-  color: grey;
-  transition: color 0.3s ease;
-}
-
-/* Change color to red when the heart icon is tapped or clicked */
-.head_button i.active {
-  color: red;
-}
-</style>
-
-<script>
-    function toggleHeart(element) {
-        const heartIcon = element.querySelector('i');
-        heartIcon.classList.toggle('active');
-      }
-      
-        // Fetch grocery data from the server
-        fetch('/api/groceries')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('grocery-cards-container');
-                
-                data.forEach(item => {
-                    const card = document.createElement('div');
-                    card.classList.add('card');
-
-                    card.innerHTML = `
-                        <div class="card-content">
-                            <h3>₹ ${item.price}</h3>
-                            <p class="item-name">${item.itemName}</p>
-                            <p class="item-description">${item.description}</p>
-                        </div>
-                        <div class="card-footer">
-                            <a class="show-more" href="#">Show More</a>
-                        </div>
-                    `;
-                    container.appendChild(card);
+    <div id="productmainappend" class="product-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/api/groceries')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('homepage_top_child');
+                    container.innerHTML = ''; // Clear any existing content
+                    
+                    data.forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        
+                        card.innerHTML = `
+                            <button class="heart-button" onclick="toggleHeart(this)">
+                                <i class="fa-solid fa-heart fa-grey"></i>
+                            </button>
+                            <div class="card-image">
+                                <img src="${item.photo}" alt="${item.itemName}" />
+                            </div>
+                            <div class="card-content">
+                                <h3>₹ ${item.price}</h3>
+                                <p class="item-name">${item.itemName}</p>
+                                <p class="item-description">${item.description}</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="show-more" href="productdetails.html">Show More</a>
+                            </div>
+                        `;
+                        
+                        container.appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching groceries:', error);
                 });
-            })
-            .catch(error => console.error('Error fetching grocery data:', error));
-    </script>
-
-
-
-     
-      
-      <div class="footerflex">
-        <div>ABOUT US</div>
-        <ul>
-            <li>
-                <a href="">About MITSKART Group</a>
-            </li>
-            <li>
-                <a href="">Careers</a>
-            </li>
-            <li>
-                <a href="">Contact Us</a>
-            </li>
-            <li>
-                <a href="">MITSKARTPeople</a>
-            </li>
-            <li>
-                <a href="">Waah Jobs</a>
-            </li>
-        </ul>
-    </div>
-    <div class="footerflex">
-        <div>MITSKART</div>
-        <ul>
-            <li>
-                <a href="">Help</a>
-            </li>
-            <li>
-                <a href="">Sitemap</a>
-            </li>
-            <li>
-                <a href="">Legal & Privacy Information</a>
-            </li>
-            <li>
-                <a href="">Blog</a>
-            </li>
-            <li>
-                <a href=""></a>
-            </li>
-        </ul>
-    </div>
-
-
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
-    </body>
-    </html>
-    <script src="./scripts/navbar.js"></script>
-
-    
-    <script>
-        let lsdata = JSON.parse(localStorage.getItem("local_Key"))
-        // console.log(lsdata)
-        let mainContainer = document.getElementById("productmainappend")
-        mainContainer.innerHTML = ""
-    
-        let product = lsdata.map((element)=>{
-            console.log(element)
-            return `
-        <div class="product_img">
-                <div class="image_discription">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src=${element.image_src}> </div>
-                            <div class="swiper-slide"> <img src=${element.image_src}></div>
-                            <div class="swiper-slide"> <img src=${element.image_src}></div>
-                            <div class="swiper-slide"> <img src=${element.image_src}></div>
+        });
+        </script>
         
-                        </div>
-        
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev" id="prev"></div>
-                        <div class="swiper-button-next" id="next"></div>
-                    </div>
-        
-                    <div class="itemdescription">
-                        <h3> Description </h3>
-                        <p>Brand: ${element.brand} <br>
-                            ${element.description} <br>
-                            ${element.title} <br>
-                            Price: <span style="font-weight:bolder">${element.price}</span> and it's negotiable
-                            </p>
-                    </div>
-                </div>-->
-    
-                <div class="product_details">
-                    <div class="box">
-                        <div class="price">
-                            <h3> ₹ ${element.price}</h3>
-                            <div>
-                                <p><i class="fa-solid fa-share-nodes"></i> </p>
-                                <p> <i class="fa-regular fa-heart"></i> </p>
-                            </div>
-                        </div>
-                        <p>${element.traveled}</p>
-                        <p> ${element.title} </p>
-                        <div class="location">
-                            <p>${element.location}</p>
-                            <p>${element.date}</p>
-                        </div>
-                    </div>
-        
-                    <div class="box" id="box2">
-                        <p class="Seller_description"> Seller Description </p>
-                        <div class="seller_detail">
-                            <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659651__340.png">
-                            <div>
-                                <h2> Dr Naik </h2>
-                                <p>Member since Nov 2021</p>
-                            </div>
-                        </div>
-                        <a href="./chat.html"> Chat with Seller  </a>
-        
-                    </div>
-        
-                 <div class="box" id="box3">
-                      <h2> Posted in </h2>
-                      <p>${element.location}</p>
-                      <img src="https://wp.inews.co.uk/wp-content/uploads/2019/06/google-maps.jpg" >
-                 </div>
-        
-        
-        
-                </div>
-            </div> 
-        `
-       
-    
-        })
-        mainContainer.innerHTML = product
-    </script>
-       
-    
-    
-    
-
+</body>
+</html>
