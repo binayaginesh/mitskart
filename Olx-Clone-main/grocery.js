@@ -32,15 +32,12 @@ module.exports = function() {
     router.use('/database', express.static(path.join(__dirname, 'database')));
 
     // Route to get grocery data
-    router.get('/api/groceries', (req, res) => {
-        console.log('GET /api/groceries route hit'); // Debug statement
+    router.get('/groceries', (req, res) => {
         const filePath = path.join(__dirname, 'database', 'grocery.json');
         fs.readFile(filePath, 'utf8', (err, data) => {
             if (err) {
-                console.error('Error reading file:', err);
                 return res.status(500).json({ message: 'Error reading file' });
             }
-            console.log('Data read from file:', data); 
             res.json(JSON.parse(data || '[]'));
         });
     });
