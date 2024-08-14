@@ -67,7 +67,7 @@
             </div>-->
 
 
-            <form id="productForm" action="/save-data" method="POST">
+            <form id="productForm" action="/api/save-grocery-data" method="POST">
                 <div class="inner__heading">
                     <div class="inner__title">Item Name *</div>
                     <div class="inner__input">
@@ -236,20 +236,21 @@
             <p><b> </b></p>
         </div>
     </div>
+
+    <script>
+        function checkForBlank(){
+            if(document.getElementById("year").value==""){
+                alert("You missed something")
+                document.getElementById("year").style.border = "3px solid red";
+            }
+        }
+        document.getElementById("post_btn").addEventListener("click",function(){
+            checkForBlank();
+        })
+    </script> 
+    
+    <script src="./grocery.js"></script>
 </body>
 
 </html>
 
- <script>
-    function checkForBlank(){
-        if(document.getElementById("year").value==""){
-            alert("You missed something")
-            document.getElementById("year").style.border = "3px solid red";
-        }
-    }
-    document.getElementById("post_btn").addEventListener("click",function(){
-        checkForBlank();
-    })
-</script> 
-
-<script src="./scripts/grocery.js"></script>

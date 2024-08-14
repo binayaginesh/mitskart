@@ -1,6 +1,6 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const groceryRoutes = require('./grocery'); // Import the grocery routes
+const bodyParser = require('body-parser'); 
+const groceryRoutes = require('./grocery.js'); // Import the grocery routes
 
 const app = express();
 
@@ -14,11 +14,11 @@ app.use(express.static('public'));
 // Use the grocery routes for API routes
 app.use('/api', groceryRoutes());
 
-// You can add other routes and configurations here if needed
-// For example, if you have other routes:
-// app.use('/fashion', fashionRoutes());
-// app.use('/handbag', handbagRoutes());
-// app.use('/login', loginRoutes());
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
+});
 
 // Start the server
 const PORT = process.env.PORT || 3000;
