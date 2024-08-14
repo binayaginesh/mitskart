@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser'); 
+const path = require('path');
 const groceryRoutes = require('./grocery.js'); // Import the grocery routes
 
 const app = express();
@@ -10,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files
 app.use(express.static('public'));
+app.use('/img', express.static(path.join(__dirname, 'img')));
+app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
+app.use('/styles', express.static(path.join(__dirname, 'public', 'styles')));
+app.use('/database', express.static(path.join(__dirname, 'database')));
 
 // Use the grocery routes for API routes
 app.use('/api', groceryRoutes());
