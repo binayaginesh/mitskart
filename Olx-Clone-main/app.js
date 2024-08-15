@@ -16,6 +16,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'public', 'uploads')));
 app.use('/styles', express.static(path.join(__dirname, 'public', 'styles')));
 app.use('/database', express.static(path.join(__dirname, 'database')));
 
+
+// Serve static files from the scripts directory
+app.use('/scripts', express.static(path.join(__dirname, 'scripts')));
+
+
 // Use the grocery routes for API routes
 app.use('/api', groceryRoutes());
 

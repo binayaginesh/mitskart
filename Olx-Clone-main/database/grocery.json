@@ -1,186 +1,117 @@
 [
   {
+    "itemName": "carrot",
+    "description": "super",
+    "price": "489",
+    "photo": "/uploads/8290b19644ba17df6e4b74ea944f400d",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "gz95vad6o",
     "itemName": "jam",
-    "description": "nice",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/d10d8d277f181664d1ecff7f9ce1112f",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "bz0ozcagf",
+    "itemName": "jam",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/b9c9dd69b9d5f09d90385d86ec956e16",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "u5b8950me",
+    "itemName": "jam",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/ed52665980541e10e50a1f0c7d537e8f",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "fh2n5kum7",
+    "itemName": "jam",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/4d521d8a0683fbc3ccaf33dedfbe8cf1",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "ubzdgbh6z",
+    "itemName": "jam",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/b43e05b7fd118d58ca2707460bba91da",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "w9j4r84cn",
+    "itemName": "jam",
+    "description": "healthy",
     "price": "200",
-    "photo": "hiii",
+    "photo": "/uploads/2b085c8ff9f53d944f59e2a10ec18f4d",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "id": "a3xbfyzeb",
+    "itemName": "milkkkk",
+    "description": "healthy and super tasty food",
+    "price": "30",
+    "photo": "/uploads/eb700e216dcbc8525a2fe71b418e7057",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
   },
   {
-    "itemName": "jam",
-    "description": "nice",
+    "id": "v9ksun70o",
+    "itemName": "milkkkk",
+    "description": "healthy and super tasty food",
     "price": "200",
-    "photo": "hiii",
+    "photo": "/uploads/d639ba7a27805900d4cd4613aefba7ac",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
   },
   {
-    "itemName": "jam",
-    "description": "nice",
+    "id": "4s8iwd6rs",
+    "itemName": "milkkkk",
+    "description": "healthy and super tasty food",
     "price": "200",
-    "photo": "Screenshot (1).png",
+    "photo": "/uploads/bf67648ce4427d3dd5f3f7911876f9fd",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
   },
   {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "200",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "20",
-    "photo": null,
+    "id": "w4fy9g8n8",
+    "itemName": "carrot",
+    "description": "healthy and super tasty food",
+    "price": "378",
+    "photo": "/uploads/325c2a523b80ea369e13a5e0f6ed3ffc",
     "name": "webduo",
     "phoneNumber": "9048524615"
   },
   {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "200",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "30",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "30",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "30",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "40",
-    "photo": null,
-    "name": "binayamalu ",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "40",
-    "photo": null,
-    "name": "binayamalu ",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "40",
-    "photo": null,
-    "name": "binayamalu ",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "200",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "bread",
-    "description": "tasty",
-    "price": "40",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "bread",
-    "description": "nice",
-    "price": "200",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
-    "price": "290",
-    "photo": null,
-    "name": "binayamalu ",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "jam",
-    "description": "nice",
+    "id": "m14iom0b7",
+    "itemName": "tomato",
+    "description": "healthy and super tasty food",
     "price": "230",
-    "photo": null,
-    "name": "binayamalu ",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "milkkkk",
-    "description": "tasty",
-    "price": "200",
-    "photo": null,
-    "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "carrot",
-    "description": "healthy",
-    "price": "200",
-    "photo": null,
-    "name": "varun",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "carrot",
-    "description": "healthy",
-    "price": "200",
-    "photo": null,
-    "name": "varun",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "carrot",
-    "description": "niceeee",
-    "price": "399",
-    "photo": null,
+    "photo": "/uploads/4ab1b037bbb537fbbd5ad9c891189f35",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
   },
   {
     "itemName": "milkkkk",
     "description": "healthy and super tasty food",
-    "price": "40",
-    "photo": "/uploads/f361d14b582896e0566657ad9b14698f",
+    "price": "230",
+    "photo": "/uploads/de9892d8cd8403136cb16c6f45cb0915",
     "name": "Binaya Ginesh",
-    "phoneNumber": "9048524615"
-  },
-  {
-    "itemName": "carrot",
-    "description": "super",
-    "price": "489",
-    "photo": "/uploads/8290b19644ba17df6e4b74ea944f400d",
-    "name": "binayamalu ",
     "phoneNumber": "9048524615"
   }
 ]
