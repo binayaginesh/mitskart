@@ -1,4 +1,4 @@
-function viewmore(){
+/*function viewmore(){
   window.location.href = "phones.html"
 }
 // * ------------------------>> FETCH DATA  <<-------------------------------------

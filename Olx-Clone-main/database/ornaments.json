@@ -1,10 +1,18 @@
 [
   {
-    "itemName": "jam",
-    "description": "healthy",
-    "price": "230",
-    "photo": "/uploads/b03ec7639c70b8b1ff312ed26928ebaf",
-    "name": "binayamalu ",
+    "itemName": "chain",
+    "description": "stylish lokking and classy chain",
+    "price": "80",
+    "photo": "/uploads/fa8ba27b6fcc614bad66dae7a70560fb",
+    "name": "Binaya Ginesh",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "itemName": "bracelet",
+    "description": "stylish confortable daily wear",
+    "price": "320",
+    "photo": "/uploads/d6b19eb1f7e96011bf492cf96fcea8ff",
+    "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
   }
 ]

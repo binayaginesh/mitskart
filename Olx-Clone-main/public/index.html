@@ -41,16 +41,17 @@
 
 
       
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Login Popup</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
      
 
 
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Login Popup</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+          
             <style>
               /* Basic reset and styling */
               body {
@@ -309,7 +310,9 @@
           
               /* Style for the button with black box */
               .button {
-                display: inline-block;
+                position: absolute; /* Position the button absolutely */
+                right: 200px; /* Move the button 10px from the right edge */
+                bottom: 32px; /* Move the button 10px from the bottom edge */
                 padding: 10px 20px;
                 background-color: black;
                 color: white;
@@ -317,14 +320,23 @@
                 font-weight: bold;
                 border-radius: 5px;
                 cursor: pointer;
-                margin-left: auto;
-                margin-right: 50px;
               }
+
             </style>
-          </head>
-          <body>
+            <style>
+              a {
+                color: white; /* Set the text color to white */
+                text-decoration: none; /* Remove the underline */
+              }
+              
+              a:hover {
+                color: lightgray; /* Optional: Change the color when the user hovers over the link */
+              }
+              
+            </style>
+            
           
-           
+           <body>
             <div class="your_logo">
               <div class="person_img" id="person_img_id">
                 <div>
@@ -366,21 +378,10 @@
               </div>
             </div>
           
-          </body>
-          </html>
+         
+          
           
 
-<style>
-  a {
-    color: white; /* Set the text color to white */
-    text-decoration: none; /* Remove the underline */
-  }
-  
-  a:hover {
-    color: lightgray; /* Optional: Change the color when the user hovers over the link */
-  }
-  
-</style>
 
 
 
@@ -485,9 +486,9 @@
         </div>
         
         <div class="card-content">
-            <h3>₹ 98</h3>
-            <p class="item-name">Leather Bag</p>
-            <p class="item-description">Good for blood development</p>
+            <h3>₹ 200</h3>
+            <p class="item-name">Fancy Bag</p>
+            <p class="item-description">Good quality bag casual use </p>
         </div>
         
         <div class="card-footer">
@@ -505,9 +506,9 @@
       </div>
       
       <div class="card-content">
-          <h3>₹ 98</h3>
-          <p class="item-name">Leather Bag</p>
-          <p class="item-description">Good for blood development</p>
+          <h3>₹ 300</h3>
+          <p class="item-name">Watch</p>
+          <p class="item-description">Stylish and precise timepiece</p>
       </div>
       
       <div class="card-footer">
@@ -525,13 +526,13 @@
     </div>
     
     <div class="card-content">
-        <h3>₹ 98</h3>
+        <h3>₹ 300</h3>
         <p class="item-name">Leather Bag</p>
-        <p class="item-description">Good for blood development</p>
+        <p class="item-description"> Durable, spacious carry-all</p>
     </div>
     
     <div class="card-footer">
-        <a class="show-more" href="#">Show More</a>
+        <a class="show-more" href="productdetails.html">Show More</a>
     </div>
 </div>
 
@@ -546,8 +547,8 @@
   
   <div class="card-content">
       <h3>₹ 98</h3>
-      <p class="item-name">Leather Bag</p>
-      <p class="item-description">Good for blood development</p>
+      <p class="item-name">Book</p>
+      <p class="item-description">Engaging reads interesting</p>
   </div>
   
   <div class="card-footer">
@@ -566,7 +567,7 @@
   
   <div class="card-content">
       <h3>₹ 98</h3>
-      <p class="item-name">Leather Bag</p>
+      <p class="item-name">Ladies Finger</p>
       <p class="item-description">Good for blood development</p>
   </div>
   
@@ -586,8 +587,8 @@
   
   <div class="card-content">
       <h3>₹ 98</h3>
-      <p class="item-name">Leather Bag</p>
-      <p class="item-description">Good for blood development</p>
+      <p class="item-name">Ornament</p>
+      <p class="item-description">Good for style development</p>
   </div>
   
   <div class="card-footer">
@@ -606,8 +607,8 @@
   
   <div class="card-content">
       <h3>₹ 98</h3>
-      <p class="item-name">Leather Bag</p>
-      <p class="item-description">Good for blood development</p>
+      <p class="item-name">Toy</p>
+      <p class="item-description">Good fquality material use</p>
   </div>
   
   <div class="card-footer">
@@ -626,7 +627,7 @@
   
   <div class="card-content">
       <h3>₹ 98</h3>
-      <p class="item-name">Leather Bag</p>
+      <p class="item-name">Record</p>
       <p class="item-description">Good for blood development</p>
   </div>
   
@@ -723,7 +724,7 @@
           </li>
         </ul>
       </div>-->
-      <div class="footerflex"><style> flex:centre</style>
+      <div class="footerflex"><style></style>
         <div>ABOUT US</div>
         <ul>
           <li>
@@ -738,6 +739,7 @@
          
         </ul>
       </div>
+
       <div class="footerflex">
         
       <div class="footerflex">
