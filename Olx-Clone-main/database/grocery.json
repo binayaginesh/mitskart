@@ -15,5 +15,21 @@
     "photo": "/uploads/b7f0bfd896fd41943148c4201d42b82e",
     "name": "Binaya Ginesh",
     "phoneNumber": "9048524615"
+  },
+  {
+    "itemName": "carrot",
+    "description": "super",
+    "price": "20",
+    "photo": "/uploads/62b3f0c879f564a1d826ce09a8e4c85a",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
+  },
+  {
+    "itemName": "milkkkk",
+    "description": "healthy",
+    "price": "230",
+    "photo": "/uploads/5442118bc9294caccb359e6ba5679540",
+    "name": "binayamalu ",
+    "phoneNumber": "9048524615"
   }
 ]

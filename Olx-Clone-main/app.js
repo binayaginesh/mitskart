@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const groceryRoutes = require('./grocery.js'); // Import the grocery routes
 const fashionRoutes = require('./fashion.js');
+const ornamentsRoutes = require('./ornaments.js');
+
 const app = express();
 
 // Middleware to parse JSON bodies
@@ -24,6 +26,7 @@ app.use('/scripts', express.static(path.join(__dirname, 'scripts')));
 // Use the grocery routes for API routes
 app.use('/api', groceryRoutes());
 app.use('/fashion', fashionRoutes());
+app.use('/ornaments', ornamentsRoutes());
 
 // Error handling middleware
 app.use((err, req, res, next) => {
