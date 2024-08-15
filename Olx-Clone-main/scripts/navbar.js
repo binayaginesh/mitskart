@@ -1,4 +1,4 @@
-        let country = document.getElementById('country');
+        /*let country = document.getElementById('country');
         let moving = document.getElementById('moving');
         let text = document.getElementById('text');
         let list = document.getElementById('list');
@@ -79,4 +79,4 @@ document.getElementById("logoimg").addEventListener("click",function(){
 // let login_btn = document.getElementsByClassName("loginwithemail_btn");
 // login_btn.addEventListener("click",function(){
 //     window.location.href="signup.html"
-// })
+// })*/
